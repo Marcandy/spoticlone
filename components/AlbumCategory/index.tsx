@@ -1,6 +1,7 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, FlatList } from 'react-native';
 import { Album } from '../../types';
+import AlbumComponent from '../Album';
 import styles from './styles';
 
 export type AlbumCategoryProps = {
@@ -9,9 +10,15 @@ export type AlbumCategoryProps = {
 }
 
 const AlbumCategory = (props: AlbumCategoryProps)=> (
-    <View>
+    <View style={styles.container}>
         <Text style={styles.title}> {props.title}</Text>
-        <Text> </Text>
+        <FlatList
+            data={props.albums}
+            renderItem={ ({ item }) => <AlbumComponent album={item} />}
+            keyExtractor={( item) => item.id }
+            horizontal
+            showsHorizontalScrollIndicator={false}
+        />
     </View>
 );
 
