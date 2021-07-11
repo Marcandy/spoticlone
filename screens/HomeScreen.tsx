@@ -15,7 +15,8 @@ export default function HomeScreen() {
             title={item.title}
             albums={item.albums}
           />
-        ) }
+        )}
+        keyExtractor={(item) => item.id}
       />
       
     </View>
