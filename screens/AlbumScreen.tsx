@@ -1,9 +1,9 @@
 import { View, Text } from "react-native";
 
 const AlbumScreen = () => (
-    <view>
+    <View>
         <Text>This is the Album screen</Text>
-    </view>
+    </View>
 )
 
 export default AlbumScreen;
