@@ -5,6 +5,7 @@ import { useRoute } from '@react-navigation/core';
 
 import AlbumDetails from './../data/AlbumDetails';
 import SongListItem from '../components/SongListItem.tsx';
+import { FlatList } from 'react-native-gesture-handler';
 
 
 const AlbumScreen = () => {
@@ -17,7 +18,12 @@ const AlbumScreen = () => {
 
     return (
         <View>
-            <Text>This is the Album screen</Text>
+
+            <FlatList
+                data={AlbumDetails.songs}
+                renderItem={({ item }) => <SongListItem song={item} /> }
+                keyExtractor={(item) => item.id}
+            />
             <SongListItem
                 song={AlbumDetails.songs[0]}
             />
