@@ -12,11 +12,11 @@ const styles = StyleSheet.create({
     },
     title: {
         color: 'white',
-        fontSize: 24
+        fontSize: 22
     },
     artist: {
         color: 'lightgray',
-        fontSize: 18
+        fontSize: 17
     },
     rightContainer: {
         justifyContent: 'space-around',
