@@ -3,27 +3,46 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-        flexDirection: 'row',
-        margin: 10,
-        backgroundColor: 'green',
+        marginBottom: 5,
+        backgroundColor: '#131313',
         position: 'absolute',
-        bottom: '5%'
+        bottom: 45,
+        width: '100%',
+        borderWidth: 3,
+        borderColor: 'black',
+        alignItems: 'center',
+        flexDirection: 'row'
     },
     image: {
-        width: '100%',
-        height: 60
+        width: 60,
+        height: 60,
+        marginRight: 10
     },
     title: {
         color: 'white',
-        fontSize: 22
+        fontSize: 18,
+        fontWeight: 'bold',
+        margin: 5
     },
     artist: {
         color: 'lightgray',
-        fontSize: 17
+        fontSize: 18,
+    },
+    nameContainer: {
+        marginLeft: 1,
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
+    iconsContainer: {
+        alignItems: 'center',
+        flexDirection: 'row',
+        width: 100,
+        justifyContent: 'space-around'
     },
     rightContainer: {
-        justifyContent: 'space-around',
-        marginLeft: 15
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        flex: 1
     }
 });
 
