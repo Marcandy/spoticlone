@@ -4,10 +4,13 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        margin: 10
+        margin: 10,
+        backgroundColor: 'green',
+        position: 'absolute',
+        bottom: '5%'
     },
     image: {
-        width: 60,
+        width: '100%',
         height: 60
     },
     title: {
