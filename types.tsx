@@ -32,5 +32,8 @@ export type Song = {
   id: string,
   imageUri: string,
   title: string,
-  artist: string
+  artist: string,
+  name:string,
+  by: string,
+  numberOfLikes: string
 };
