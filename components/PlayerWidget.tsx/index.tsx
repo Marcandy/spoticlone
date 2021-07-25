@@ -2,8 +2,9 @@ import React from "react";
 import { View, Text, Image } from 'react-native';
 import { Song } from '../../types';
 import styles from './styles';
+import { AntDesign, FontAwesome } from "@expo/vector-icons";
 
-const props = {
+const song = {
     id: '2',
     imageUri: 'https://cdn6.f-cdn.com/contestentries/1485199/27006121/5ca3e39ced7f1_thumb900.jpg',
     title: 'Lorem Ipsum',
@@ -13,10 +14,16 @@ const props = {
 const PlayerWidget = () => {
     return (
         <View style={styles.container}>
-            <Image source={{uri: props.song.imageUri }} style={styles.image}/>
-            <View style={styles.rightContainer}>
-                <Text style={styles.title}>{props.song.title}</Text>
-                <Text style={styles.artist}>{props.song.artist}</Text>
+            <Image source={{uri: song.imageUri }} style={styles.image}/>
+            <View style={styles.rightContainer}>        
+                <View style={styles.nameContainer}>
+                    <Text style={styles.title}>{song.title}</Text>
+                    <Text style={styles.artist}>{song.artist}</Text>
+                </View>
+                <View style={styles.iconsContainer}>
+                    <AntDesign name='hearto' size={32} color={'white'} />
+                    <FontAwesome name='play' size= {32} color={'white'} />
+                </View>
             </View>
             
         </View>
