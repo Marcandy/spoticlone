@@ -9,9 +9,14 @@ const styles = StyleSheet.create({
         bottom: 45,
         width: '100%',
         borderWidth: 3,
-        borderColor: 'black',
-        alignItems: 'center',
-        flexDirection: 'row'
+        borderColor: 'black'
+    },
+    row: {
+        flexDirection: 'row',
+    },
+    progress: {
+        height: 2,
+        backgroundColor: '#bcbcbc'
     },
     image: {
         width: 60,
