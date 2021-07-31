@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-spoticlone-dev-20326-authRole",
+      "UnauthRoleArn": "arn:aws:iam::469756996888:role/amplify-spoticlone-dev-20326-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::469756996888:role/amplify-spoticlone-dev-20326-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-spoticlone-dev-20326-deployment",
+      "UnauthRoleName": "amplify-spoticlone-dev-20326-unauthRole",
+      "StackName": "amplify-spoticlone-dev-20326",
+      "StackId": "arn:aws:cloudformation:us-east-2:469756996888:stack/amplify-spoticlone-dev-20326/db3010f0-f0fb-11eb-9c48-0611d02289a2",
+      "AmplifyAppId": "d3e07mw50jwdwr"
+    }
+  }
+}
